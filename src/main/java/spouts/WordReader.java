@@ -67,7 +67,7 @@ public class WordReader extends BaseRichSpout {
 		try {
 			this.fileReader = new FileReader(conf.get("wordsFile").toString());
 		} catch (FileNotFoundException e) {
-			throw new RuntimeException("Error reading file ["+conf.get("wordFile")+"]");
+			throw new RuntimeException("Error reading file ["+conf.get("wordsFile")+"]");
 		}
 		this.collector = collector;
 	}
